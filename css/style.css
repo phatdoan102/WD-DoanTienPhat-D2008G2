@@ -752,7 +752,6 @@ button:focus {
   margin: 0 auto;
   overflow: hidden;
 	height: 100vh;
-	pointer-events: none
 }
 .slider-content .slide {
   position: absolute;
