@@ -6,7 +6,8 @@
 	box-sizing: border-box
 }
 html{
-	scroll-behavior: smooth
+	scroll-behavior: smooth;
+	overflow-x: hidden
 }
 body{
 	background: #171717;
@@ -14,7 +15,6 @@ body{
 	font-family: Nunito;
 	font-weight: 300;
 	position: relative;
-	overflow: hidden;
 	width: 100vw;
 	height: 100vh;
 	cursor: context-menu;
@@ -29,8 +29,12 @@ body{
     font-size: 10px;
   }
 }
+::-webkit-scrollbar {
+    display: none;
+}
 #wrapper{
-	position: absolute
+	position: relative;
+	overflow-x: hidden
 }
 section{
 	height: 100vh !important;
@@ -179,7 +183,7 @@ section{
 }
 .photo{
 	background: url("../images/layer2.png");
-	height: 900px;
+	height: 100%;
 	width: 100%;
 	background-size: contain !important;
 	position: absolute;
@@ -220,7 +224,7 @@ section{
 }
 .layer1{
 	background: url("../images/layer1.png");
-	height: 900px;
+	height: 100%;
 	width: 100%;
 	background-size: contain !important;
 	position: absolute;
@@ -236,7 +240,7 @@ section{
 }
 .layer3{
 	background: url("../images/layer3.png");
-	height: 900px;
+	height: 100%;
 	width: 100%;
 	background-size: contain !important;
 	position: absolute;
@@ -268,7 +272,7 @@ p{
 }
 .info1{
 	position: absolute;
-	width: 30vw;
+	width: 40vw;
 	height: 30vh;
 	z-index: 2;
 	top: 30vh;
@@ -287,7 +291,7 @@ p{
 	text-shadow: 3px 3px 20px #444444
 }
 .section:hover .info1{
-	transform: translateX(-3vw)
+	transform: translateX(-10vw)
 }
 .demo a {
   padding-top: 60px;
@@ -670,8 +674,8 @@ button:focus {
 	font-size: 100px;
 	position: absolute;
 	z-index: 99;
-	color: #EDEDED ~;
-	bottom: -10vh;
+	color: #EDEDED;
+	bottom: -5vh;
 	left: -0.5vw;
 	opacity: .1;
 	width: 200%;
@@ -856,7 +860,7 @@ button:focus {
      object-fit: cover;
 }
 .excerpt{
-	width: 500px	
+	width: 100%	
 }
 .artdirect{
 	position: absolute;
