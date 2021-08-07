@@ -180,6 +180,7 @@ section{
 	position: relative;
 	height: 100vh;
 	width: 100vw;
+	letter-spacing: 2px;
 }
 .photo{
 	background: url("../images/layer2.png");
@@ -284,7 +285,7 @@ p{
 	font-weight: 900;
 	font-size: 80px;
 	transition: 0.3s ease;
-	letter-spacing: 10px 
+	letter-spacing: 3px 
 }
 .section:hover .fullname{
 	color:#EDEDED;
